@@ -1,0 +1,33 @@
+#preview{
+    -fx-text-fill:#ccffff;
+    -fx-font-size:14;
+}
+#display{
+    
+}
+#names{
+    -fx-text-fill:#000000;
+    -fx-font
+  
+   
+    
+}
+#email{
+    -fx-text-fill:#000000;
+    
+}
+#contact{
+    -fx-text-fill:#000000
+  
+   
+}
+#EXIT{
+    -fx-font-weight:italic;
+}
+
+#window{
+    -fx-background-color:#99ccee;
+}
+#Button{
+    -fx-background-color:#ff99cc;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="577.0" style="-fx-background-color: #99ccee;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignmet.PrimaryController">
+   <children>
+      <HBox fx:id="preview" layoutX="196.0" layoutY="84.0" prefHeight="51.0" prefWidth="284.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <HBox fx:id="display" layoutX="196.0" layoutY="163.0" prefHeight="188.0" prefWidth="261.0" />
+      <Pane fx:id="hbox" layoutX="14.0" layoutY="70.0" prefHeight="499.0" prefWidth="154.0">
+         <children>
+            <Button fx:id="picture" layoutX="7.0" layoutY="228.0" mnemonicParsing="false" onAction="#picture" prefHeight="38.0" prefWidth="142.0" text="Image">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="view" layoutX="7.0" layoutY="294.0" mnemonicParsing="false" onAction="#View" prefHeight="38.0" prefWidth="142.0" text="VIEW">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="AboutUS" layoutX="14.0" layoutY="364.0" mnemonicParsing="false" onAction="#AboutUS" prefHeight="38.0" prefWidth="142.0" text="ViewAboutUS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="EXIT" layoutX="7.0" layoutY="439.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="38.0" prefWidth="142.0" text="EXIT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="text" layoutX="1.0" layoutY="14.0" prefHeight="38.0" prefWidth="154.0" promptText="Enter heading">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="AddHeading" layoutX="6.0" layoutY="86.0" mnemonicParsing="false" onAction="#AddHeading" prefHeight="38.0" prefWidth="142.0" text="AddHeading">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="changeFont" layoutX="6.0" layoutY="167.0" mnemonicParsing="false" onAction="#changeFont" prefHeight="38.0" prefWidth="142.0" text="Modify">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="names" layoutX="196.0" layoutY="458.0" prefHeight="31.0" prefWidth="252.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="196.0" layoutY="489.0" prefHeight="25.0" prefWidth="252.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact" layoutX="196.0" layoutY="514.0" prefHeight="25.0" prefWidth="252.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="m" layoutX="-1.0" layoutY="21.0" prefHeight="51.0" prefWidth="577.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="HOME">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="ABOUTUS">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="CONTACT">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="Newlabel" layoutX="196.0" layoutY="393.0" prefHeight="39.0" prefWidth="328.0" />
+   </children>
+</Pane>
